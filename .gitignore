@@ -29,9 +29,16 @@ build/Release
 # Dependency directories
 node_modules
 jspm_packages
+nbproject
+
+#Uncommited projects
+tour-of-heroes
+angular2-fundamentals
 
 # Optional npm cache directory
 .npm
 
 # Optional REPL history
 .node_repl_history
+/angular2-fundamentals/nbproject/private/
+/register-form/nbproject/private/

@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  font-family: 'Aref Ruqaa', serif;
+}
+
+nav a {
+  padding: .5em 1em;
+  background: #419dec;
+  color: #fff;
+  border: 1px solid #1e77c3;
+  border-radius: 3px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+nav a:hover, nav a:active {
+  border-color: transparent;
+}

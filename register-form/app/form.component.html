@@ -1,0 +1,21 @@
+<h2>Register</h2>
+<form (ngSubmit)="onSubmit()">
+  <label>Avatar</label>
+  <input id="custom-input" type="file" [(ngModel)]="user.avatar" name="avatar" (change)="fileChangeListener($event)">
+  <div class="cropper-wrapper" *ngIf="showImage">
+    <img-cropper #cropper [image]="data" [settings]="cropperSettings"></img-cropper>
+    <span *ngIf="data.image" >
+      <img [src]="data.image" [width]="cropperSettings.croppedWidth" [height]="cropperSettings.croppedHeight">
+      <span class="close" (click)="deleteImg()">&#10006;</span>
+    </span>
+  </div>
+  <label>First name</label>
+  <input type="text" required [(ngModel)]="user.firstName" name="firstName" placeholder="Enter first name" />
+  <label>Last name</label>
+  <input type="text" required [(ngModel)]="user.lastName" name="lasstName"  placeholder="Enter last name" />
+  <label>Email</label>
+  <input type="text" required [(ngModel)]="user.email" name="email"  placeholder="Enter you email" />
+  <label>Password</label>
+  <input type="password" required [(ngModel)]="user.pass" name="pass" placeholder="Create password" />
+  <input type="submit" value="Submit" />
+</form>

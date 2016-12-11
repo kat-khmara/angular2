@@ -1,0 +1,74 @@
+form {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+}
+
+h2 {
+  color: #419dec;
+  margin: .5em 0 .1em;
+  text-align: center;
+}
+
+input {
+  padding: .5em 1em;
+  color: #333;
+  border: 1px solid #419dec;
+  border-radius: 3px;
+  margin-bottom: .3em;
+}
+
+label {
+  color: #419dec;
+  margin-bottom: .3em;  
+}
+
+input[type="submit"], button {
+  margin-top: 1em;
+  padding: .5em 1em;
+  background: #419dec;
+  color: #fff;
+  border: 1px solid #1e77c3;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover, button {
+  border-color: transparent;
+}
+
+img-cropper, img-cropper .ng2-imgcrop {
+  display: flex;
+  flex-direction: column;
+}
+
+.cropper-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cropper-wrapper span {
+  align-items: flex-start;
+  display: flex;
+}
+
+.close {
+  color: #419dec;
+  font-weight: bold;
+  cursor: pointer;
+  height: 26px;
+  line-height: 18px;
+  width: 26px;
+  font-size: 30px;
+  border: 2px solid #419dec;
+  border-radius: 20px;
+  padding: 0.05em;
+}
+
+.close:hover {
+  color: #1e77c3;
+  border-color: #1e77c3;
+}

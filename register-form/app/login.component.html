@@ -1,0 +1,17 @@
+<div class="modal-bg" [class.show-login]="showLogin">
+  <div class="modal">
+    <h2>Login</h2>
+    <form (ngSubmit)="onLoginSubmit()" *ngIf="showForm">
+      <label>Email</label>
+      <input type="text" required [(ngModel)]="email" name="email" placeholder="Enter email" />
+      <label>Password</label>
+      <input type="text" required [(ngModel)]="pass" name="pass" placeholder="Enter password" />
+      <input type="submit" value="Submit" />
+    </form>
+    <div *ngIf="!showForm">
+      <p><label>Email: </label> {{ email }}</p>
+      <p><label>Password: </label> {{ pass }}</p>
+      <button (click)="close()">Close</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+h1 {
+  color: #419dec;
+  margin: .2em 0 .5em;
+}
+

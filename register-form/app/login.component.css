@@ -1,0 +1,30 @@
+.modal-bg {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(65, 157, 236, .5);
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-bg.show-login {
+  display: flex!important;
+} 
+
+.modal {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid #419dec;
+  border-radius: 5px;
+  align-items: center;
+}
+
+.modal form {
+  width: 80%;
+}
